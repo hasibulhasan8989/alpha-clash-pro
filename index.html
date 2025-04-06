@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- poppin style -->
+    <!-- poppins style -->
      <link rel="stylesheet" href="styles/style.css">
 
 </head>
@@ -84,27 +84,28 @@
                     <button class=" flex gap-2 p-4 bg-[#894189] rounded-full font-medium">
                         <p>Life</p>
                         <img src="images/heart.svg" alt="">
-                       <p>1</p> 
+                       <p id="lifeBoard">3</p> 
                       </button>
     
                    
                     <button class=" flex gap-2 p-4 bg-[#360490] rounded-full font-medium">
                         <p>Score</p>
                         <img src="images/doller.svg" alt="">
-                       <p>1</p> 
+                       <p id="scoreBoard">0</p> 
                       </button>
                 </div>
          
             </section>
        
     
-        <section class="score flex  justify-center items-center border min-h-screen hidden ">
+        <section id="finalScoreBoard" class="score flex  justify-center items-center border min-h-screen hidden ">
             
                 <div class="border border-gray-400 space-y-6 flex flex-col justify-center items-center bg-[#FFFFFF33] p-10 rounded-2xl">
+                    <h1 class="text-3xl">Game Over!!!!</h1>
 
-                    <h1 class="text-6xl"><span class="font-bold">Score :</span> <span>14</span></h1>
+                    <h1 class="text-6xl"><span class="font-bold">Score :</span> <span id="final-score">14</span></h1>
 
-                <button class="text-[#010313] text-[24px] font-bold bg-white rounded-lg py-3 px-6">Play Again</button>
+                <button onclick="tryAgain()" id="finalScoreBtn" class="text-[#010313] text-[24px] font-bold bg-white rounded-lg py-3 px-6">Play Again</button>
                 <p class="text-3xl font-medium">Practice will make you Pro</p>
                 </div>
             
